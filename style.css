@@ -1,0 +1,376 @@
+#profileimage{
+    height:570px;
+    border-radius: 100vh;
+    padding-top: 30px;
+}
+
+body{
+    font-family: cursive;
+  /*background-image: url(./assets/images/bhovansh.jpg);
+    background-size:100%; */
+    background-size: cover;  
+    background-image:url(https://images.unsplash.com/photo-1706790608898-eaa96ece269c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHBhcGVyJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D);
+}
+
+/*Anchor tag*/
+a {
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 500;
+}
+
+/* Contact Me btn animation*/
+#contact-h3{
+transition: trasform 0.3s ease;
+}
+
+#contact-h3:hover{
+transform: scale(1.1);
+color: #555;
+}
+
+#soc-med-icon{
+transition: trasform 0.3s ease;
+}
+
+#soc-med-icon:hover{
+transform: scale(1.1);  
+}
+/*---------------------------*/
+
+.main-div{
+    display: grid;
+    height: 100vh;
+    align-items: start;
+    grid-template-columns:500px 1fr;/* repeat(auto-fit,minmax(600px,1fr)) */
+}
+
+
+
+.div-2{
+    display: grid; 
+    grid-column: 2;
+    text-align: center ;
+}
+
+/*Profile div*/
+
+.div-profile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 500px;  
+    height: 100vh;
+
+    text-align: center;
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+
+}
+
+.link img{
+height: 30px;
+width: 30px;
+}
+
+/*Navigation*/
+.side-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+/*Nav Anchor Tag*/
+.side-nav a {
+  display: flex;
+  font-size: 1.5rem;
+  gap:40px;
+
+
+  transition: transform 0.3s ease, color 0.1s ease;
+}
+ 
+.active ,.side-nav a:hover { 
+    color:rgb(61, 194, 236); 
+}
+
+#skills{
+    display: grid;
+    margin-top: 80px;
+}
+
+#skills #static,#static2,#static3,#static4{
+    display: grid;
+    justify-content: flex-start;
+    padding-left: 50px;
+    margin-bottom: 2px;
+}
+
+.line {
+    background-color: rgb(61, 194, 236);
+    height: 3px;
+    width: 50px;
+    margin-left: 50px;
+    margin-bottom: 60px;
+}
+
+/*Skills Div Items*/
+.skill-div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+    gap: 40px;
+    padding: 20px;
+    padding-left: 40px;
+    margin-bottom: 100px;
+}
+
+.skill-item img{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.skill-item{
+    display: grid;
+    padding: 20px;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 100px;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    aspect-ratio: 1/1;
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+
+.skill-item:hover{
+    transform:scale(1.1);
+    box-shadow: 0px 0px 30px 0px rgb(98, 255, 239);
+}
+
+.skill-div h3{
+    font-size: 12px;
+    font-weight: 800;
+}
+
+
+
+/*Projects div*/
+.pro-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+}
+
+.line3{
+    background-color: rgb(61, 194, 236);
+    height: 3px;
+    width: 75px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+/*Education div*/
+
+.line4{
+    background-color: rgb(61, 194, 236);
+    height: 3px;
+    width: 87px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.edinfo{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 65px;
+    margin-top: 80px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.college{
+    font-style: italic;
+}
+
+.circle{
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    border: 3px solid rgb(61, 194, 236);
+    position: absolute;
+    left: 50px;
+    top: 7px;
+}
+
+.circle-line{
+    position: absolute;
+    width: 1px;
+    top: 0px;
+    bottom: 0px;
+    border: 1px solid rgb(61, 194, 236);
+    height: 97px;
+    left: 54px;
+    top: 18px;
+    background-color: rgb(61, 194, 236);
+}
+
+
+
+/*Artwork div*/
+.line2{
+    background-color: rgb(61, 194, 236);
+    height: 3px;
+    width: 85px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding-left: 50px;
+    padding-right: 30px ;
+    
+}
+
+.photo-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.photo-grid img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* About Me */
+.AboutMe {
+width: 400px;
+text-align: center;
+line-height: 2rem;
+font-size: 1.1rem;
+max-width: 100vw;
+}
+
+/*MediaQuerry For Mobile*/
+
+@media (max-width: 768px) {
+
+  .body{
+    font-family: Helvetica;
+  }
+
+  .main-div {
+    grid-template-columns: 1fr;  /* one column */
+    padding: 10px;
+    align-items: center;
+    max-width: 100vw;
+  }
+
+  .div-profile {
+    position: relative;   /* remove fixed */
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    padding-right: 18px;
+  }
+
+  #profileimage{
+    padding-top: 0px;
+  
+  }
+
+  .div-2 {
+    grid-column: 1;
+  }
+
+  /* Nav goes vertical */
+  .side-nav {
+    flex-direction: row;
+    
+    gap: 25px;
+  }
+
+  .side-nav a {
+    font-size: medium;
+  }
+  
+
+  /* Reduce big margins */
+  #skills {
+    margin-top: 30px;
+  }
+
+  .pro-container {
+    grid-template-columns: 1fr; /* 1 project per row */
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .photo-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .skill-div {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    padding-left: 20px;
+  }
+
+  .skill-div img{
+    height: 2rem;
+    width: 2rem;
+  }
+
+  /* Fix education alignment */
+  .edinfo {
+    padding-left: 40px;
+  }
+
+  .circle {
+    left: 20px;
+  }
+
+  .circle-line {
+    left: 24px;
+  }
+
+   .side-nav {
+    position: fixed;   /* take it out of normal flow */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2) ;
+    height: 30px;
+    z-index: 1;/*z-index controls which element stays on top when elements overlap.*/
+    justify-content: space-around;/*Equal spaces*/
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  /* Push content down so it doesn't hide under nav */
+  .div-profile {
+    margin-top: 40px;  /* adjust if nav height changes */
+  }
+}
